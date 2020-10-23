@@ -12,6 +12,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        debugPrint("Environment = \(Environment.current)")
+        debugPrint("Environment client id = \(Environment.current.clientId)")
     }
 
 
