@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F05798545F427A4DD8C61F1 /* Pods_BoardGame_RxSwift_BoardGame_RxSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D261CF3DD31E2A7072240784 /* Pods_BoardGame_RxSwift_BoardGame_RxSwiftUITests.framework */; };
+		9B5A812F2542DF8900635646 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5A812E2542DF8900635646 /* AppDelegate.swift */; };
+		9B5A81312542DF8900635646 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5A81302542DF8900635646 /* SceneDelegate.swift */; };
+		9B5A81332542DF8900635646 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5A81322542DF8900635646 /* ViewController.swift */; };
+		9B5A81362542DF8900635646 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B5A81342542DF8900635646 /* Main.storyboard */; };
+		9B5A81382542DF8B00635646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B5A81372542DF8B00635646 /* Assets.xcassets */; };
+		9B5A813B2542DF8B00635646 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B5A81392542DF8B00635646 /* LaunchScreen.storyboard */; };
+		9B5A81462542DF8B00635646 /* BoardGame_RxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5A81452542DF8B00635646 /* BoardGame_RxSwiftTests.swift */; };
+		9B5A81512542DF8B00635646 /* BoardGame_RxSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5A81502542DF8B00635646 /* BoardGame_RxSwiftUITests.swift */; };
+		A682628696788CDF9384CA16 /* Pods_BoardGame_RxSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B869DD5B5D8403E46DD0C74 /* Pods_BoardGame_RxSwiftTests.framework */; };
+		B8AEDFF2995A9709926BF0A9 /* Pods_BoardGame_RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2872348ABCCAB5F138EC23A /* Pods_BoardGame_RxSwift.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9B5A81422542DF8B00635646 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B5A81232542DF8900635646 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B5A812A2542DF8900635646;
+			remoteInfo = "BoardGame-RxSwift";
+		};
+		9B5A814D2542DF8B00635646 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B5A81232542DF8900635646 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B5A812A2542DF8900635646;
+			remoteInfo = "BoardGame-RxSwift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04FB01CA68C61786B37473FF /* Pods-BoardGame-RxSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoardGame-RxSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-BoardGame-RxSwiftTests/Pods-BoardGame-RxSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B869DD5B5D8403E46DD0C74 /* Pods_BoardGame_RxSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoardGame_RxSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AABA2466671497866C6A3CA /* Pods-BoardGame-RxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoardGame-RxSwift.debug.xcconfig"; path = "Target Support Files/Pods-BoardGame-RxSwift/Pods-BoardGame-RxSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		828584732F4630DBC367E1CF /* Pods-BoardGame-RxSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoardGame-RxSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-BoardGame-RxSwiftTests/Pods-BoardGame-RxSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		8D4FD67DDA3B62EFE396AC58 /* Pods-BoardGame-RxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoardGame-RxSwift.release.xcconfig"; path = "Target Support Files/Pods-BoardGame-RxSwift/Pods-BoardGame-RxSwift.release.xcconfig"; sourceTree = "<group>"; };
+		943433FAC7B1FB3C29D27812 /* Pods-BoardGame-RxSwift-BoardGame-RxSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoardGame-RxSwift-BoardGame-RxSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-BoardGame-RxSwift-BoardGame-RxSwiftUITests/Pods-BoardGame-RxSwift-BoardGame-RxSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9B5A812B2542DF8900635646 /* BoardGame-RxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BoardGame-RxSwift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B5A812E2542DF8900635646 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9B5A81302542DF8900635646 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9B5A81322542DF8900635646 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9B5A81352542DF8900635646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B5A81372542DF8B00635646 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B5A813A2542DF8B00635646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B5A813C2542DF8B00635646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B5A81412542DF8B00635646 /* BoardGame-RxSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BoardGame-RxSwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B5A81452542DF8B00635646 /* BoardGame_RxSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardGame_RxSwiftTests.swift; sourceTree = "<group>"; };
+		9B5A81472542DF8B00635646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B5A814C2542DF8B00635646 /* BoardGame-RxSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BoardGame-RxSwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B5A81502542DF8B00635646 /* BoardGame_RxSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardGame_RxSwiftUITests.swift; sourceTree = "<group>"; };
+		9B5A81522542DF8B00635646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2D8DDE72FABAAF2EDAE8FD0 /* Pods-BoardGame-RxSwift-BoardGame-RxSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoardGame-RxSwift-BoardGame-RxSwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-BoardGame-RxSwift-BoardGame-RxSwiftUITests/Pods-BoardGame-RxSwift-BoardGame-RxSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D261CF3DD31E2A7072240784 /* Pods_BoardGame_RxSwift_BoardGame_RxSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoardGame_RxSwift_BoardGame_RxSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2872348ABCCAB5F138EC23A /* Pods_BoardGame_RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoardGame_RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B5A81282542DF8900635646 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8AEDFF2995A9709926BF0A9 /* Pods_BoardGame_RxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B5A813E2542DF8B00635646 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A682628696788CDF9384CA16 /* Pods_BoardGame_RxSwiftTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B5A81492542DF8B00635646 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F05798545F427A4DD8C61F1 /* Pods_BoardGame_RxSwift_BoardGame_RxSwiftUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		526E839565A33F588BC2A5E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6AABA2466671497866C6A3CA /* Pods-BoardGame-RxSwift.debug.xcconfig */,
+				8D4FD67DDA3B62EFE396AC58 /* Pods-BoardGame-RxSwift.release.xcconfig */,
+				A2D8DDE72FABAAF2EDAE8FD0 /* Pods-BoardGame-RxSwift-BoardGame-RxSwiftUITests.debug.xcconfig */,
+				943433FAC7B1FB3C29D27812 /* Pods-BoardGame-RxSwift-BoardGame-RxSwiftUITests.release.xcconfig */,
+				04FB01CA68C61786B37473FF /* Pods-BoardGame-RxSwiftTests.debug.xcconfig */,
+				828584732F4630DBC367E1CF /* Pods-BoardGame-RxSwiftTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5ACDD1A8BCEC9B101EEA6DD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2872348ABCCAB5F138EC23A /* Pods_BoardGame_RxSwift.framework */,
+				D261CF3DD31E2A7072240784 /* Pods_BoardGame_RxSwift_BoardGame_RxSwiftUITests.framework */,
+				3B869DD5B5D8403E46DD0C74 /* Pods_BoardGame_RxSwiftTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B5A81222542DF8900635646 = {
+			isa = PBXGroup;
+			children = (
+				9B5A812D2542DF8900635646 /* BoardGame-RxSwift */,
+				9B5A81442542DF8B00635646 /* BoardGame-RxSwiftTests */,
+				9B5A814F2542DF8B00635646 /* BoardGame-RxSwiftUITests */,
+				9B5A812C2542DF8900635646 /* Products */,
+				526E839565A33F588BC2A5E3 /* Pods */,
+				5ACDD1A8BCEC9B101EEA6DD0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9B5A812C2542DF8900635646 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B5A812B2542DF8900635646 /* BoardGame-RxSwift.app */,
+				9B5A81412542DF8B00635646 /* BoardGame-RxSwiftTests.xctest */,
+				9B5A814C2542DF8B00635646 /* BoardGame-RxSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B5A812D2542DF8900635646 /* BoardGame-RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				9B5A81612542DF9C00635646 /* AppStart */,
+				9B5A81322542DF8900635646 /* ViewController.swift */,
+				9B5A81342542DF8900635646 /* Main.storyboard */,
+				9B5A81372542DF8B00635646 /* Assets.xcassets */,
+				9B5A813C2542DF8B00635646 /* Info.plist */,
+			);
+			path = "BoardGame-RxSwift";
+			sourceTree = "<group>";
+		};
+		9B5A81442542DF8B00635646 /* BoardGame-RxSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				9B5A81452542DF8B00635646 /* BoardGame_RxSwiftTests.swift */,
+				9B5A81472542DF8B00635646 /* Info.plist */,
+			);
+			path = "BoardGame-RxSwiftTests";
+			sourceTree = "<group>";
+		};
+		9B5A814F2542DF8B00635646 /* BoardGame-RxSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9B5A81502542DF8B00635646 /* BoardGame_RxSwiftUITests.swift */,
+				9B5A81522542DF8B00635646 /* Info.plist */,
+			);
+			path = "BoardGame-RxSwiftUITests";
+			sourceTree = "<group>";
+		};
+		9B5A81612542DF9C00635646 /* AppStart */ = {
+			isa = PBXGroup;
+			children = (
+				9B5A81392542DF8B00635646 /* LaunchScreen.storyboard */,
+				9B5A812E2542DF8900635646 /* AppDelegate.swift */,
+				9B5A81302542DF8900635646 /* SceneDelegate.swift */,
+			);
+			path = AppStart;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B5A812A2542DF8900635646 /* BoardGame-RxSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B5A81552542DF8B00635646 /* Build configuration list for PBXNativeTarget "BoardGame-RxSwift" */;
+			buildPhases = (
+				05B430A629E38236AD7C062D /* [CP] Check Pods Manifest.lock */,
+				9B5A81272542DF8900635646 /* Sources */,
+				9B5A81282542DF8900635646 /* Frameworks */,
+				9B5A81292542DF8900635646 /* Resources */,
+				B5F534F381564F5A2C67BFAC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BoardGame-RxSwift";
+			productName = "BoardGame-RxSwift";
+			productReference = 9B5A812B2542DF8900635646 /* BoardGame-RxSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9B5A81402542DF8B00635646 /* BoardGame-RxSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B5A81582542DF8B00635646 /* Build configuration list for PBXNativeTarget "BoardGame-RxSwiftTests" */;
+			buildPhases = (
+				D0A8F0CD2D514684FF88F0D4 /* [CP] Check Pods Manifest.lock */,
+				9B5A813D2542DF8B00635646 /* Sources */,
+				9B5A813E2542DF8B00635646 /* Frameworks */,
+				9B5A813F2542DF8B00635646 /* Resources */,
+				85108A556653FD4E0D34DD6E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B5A81432542DF8B00635646 /* PBXTargetDependency */,
+			);
+			name = "BoardGame-RxSwiftTests";
+			productName = "BoardGame-RxSwiftTests";
+			productReference = 9B5A81412542DF8B00635646 /* BoardGame-RxSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9B5A814B2542DF8B00635646 /* BoardGame-RxSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B5A815B2542DF8B00635646 /* Build configuration list for PBXNativeTarget "BoardGame-RxSwiftUITests" */;
+			buildPhases = (
+				1393ECCBE5BCEAF019515EF0 /* [CP] Check Pods Manifest.lock */,
+				9B5A81482542DF8B00635646 /* Sources */,
+				9B5A81492542DF8B00635646 /* Frameworks */,
+				9B5A814A2542DF8B00635646 /* Resources */,
+				7A598B96D228BA91FEF366AE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B5A814E2542DF8B00635646 /* PBXTargetDependency */,
+			);
+			name = "BoardGame-RxSwiftUITests";
+			productName = "BoardGame-RxSwiftUITests";
+			productReference = 9B5A814C2542DF8B00635646 /* BoardGame-RxSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B5A81232542DF8900635646 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					9B5A812A2542DF8900635646 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					9B5A81402542DF8B00635646 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 9B5A812A2542DF8900635646;
+					};
+					9B5A814B2542DF8B00635646 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 9B5A812A2542DF8900635646;
+					};
+				};
+			};
+			buildConfigurationList = 9B5A81262542DF8900635646 /* Build configuration list for PBXProject "BoardGame-RxSwift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B5A81222542DF8900635646;
+			productRefGroup = 9B5A812C2542DF8900635646 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B5A812A2542DF8900635646 /* BoardGame-RxSwift */,
+				9B5A81402542DF8B00635646 /* BoardGame-RxSwiftTests */,
+				9B5A814B2542DF8B00635646 /* BoardGame-RxSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B5A81292542DF8900635646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B5A813B2542DF8B00635646 /* LaunchScreen.storyboard in Resources */,
+				9B5A81382542DF8B00635646 /* Assets.xcassets in Resources */,
+				9B5A81362542DF8900635646 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B5A813F2542DF8B00635646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B5A814A2542DF8B00635646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05B430A629E38236AD7C062D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BoardGame-RxSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1393ECCBE5BCEAF019515EF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BoardGame-RxSwift-BoardGame-RxSwiftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A598B96D228BA91FEF366AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoardGame-RxSwift-BoardGame-RxSwiftUITests/Pods-BoardGame-RxSwift-BoardGame-RxSwiftUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoardGame-RxSwift-BoardGame-RxSwiftUITests/Pods-BoardGame-RxSwift-BoardGame-RxSwiftUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BoardGame-RxSwift-BoardGame-RxSwiftUITests/Pods-BoardGame-RxSwift-BoardGame-RxSwiftUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85108A556653FD4E0D34DD6E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoardGame-RxSwiftTests/Pods-BoardGame-RxSwiftTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoardGame-RxSwiftTests/Pods-BoardGame-RxSwiftTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BoardGame-RxSwiftTests/Pods-BoardGame-RxSwiftTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5F534F381564F5A2C67BFAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoardGame-RxSwift/Pods-BoardGame-RxSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoardGame-RxSwift/Pods-BoardGame-RxSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BoardGame-RxSwift/Pods-BoardGame-RxSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0A8F0CD2D514684FF88F0D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BoardGame-RxSwiftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B5A81272542DF8900635646 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B5A81332542DF8900635646 /* ViewController.swift in Sources */,
+				9B5A812F2542DF8900635646 /* AppDelegate.swift in Sources */,
+				9B5A81312542DF8900635646 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B5A813D2542DF8B00635646 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B5A81462542DF8B00635646 /* BoardGame_RxSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B5A81482542DF8B00635646 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B5A81512542DF8B00635646 /* BoardGame_RxSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9B5A81432542DF8B00635646 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B5A812A2542DF8900635646 /* BoardGame-RxSwift */;
+			targetProxy = 9B5A81422542DF8B00635646 /* PBXContainerItemProxy */;
+		};
+		9B5A814E2542DF8B00635646 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B5A812A2542DF8900635646 /* BoardGame-RxSwift */;
+			targetProxy = 9B5A814D2542DF8B00635646 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9B5A81342542DF8900635646 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B5A81352542DF8900635646 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9B5A81392542DF8B00635646 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B5A813A2542DF8B00635646 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B5A81532542DF8B00635646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9B5A81542542DF8B00635646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B5A81562542DF8B00635646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AABA2466671497866C6A3CA /* Pods-BoardGame-RxSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HL8FSAKWJ2;
+				INFOPLIST_FILE = "BoardGame-RxSwift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.phetsana.BoardGame-RxSwift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B5A81572542DF8B00635646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D4FD67DDA3B62EFE396AC58 /* Pods-BoardGame-RxSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HL8FSAKWJ2;
+				INFOPLIST_FILE = "BoardGame-RxSwift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.phetsana.BoardGame-RxSwift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9B5A81592542DF8B00635646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04FB01CA68C61786B37473FF /* Pods-BoardGame-RxSwiftTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HL8FSAKWJ2;
+				INFOPLIST_FILE = "BoardGame-RxSwiftTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.phetsana.BoardGame-RxSwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoardGame-RxSwift.app/BoardGame-RxSwift";
+			};
+			name = Debug;
+		};
+		9B5A815A2542DF8B00635646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 828584732F4630DBC367E1CF /* Pods-BoardGame-RxSwiftTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HL8FSAKWJ2;
+				INFOPLIST_FILE = "BoardGame-RxSwiftTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.phetsana.BoardGame-RxSwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoardGame-RxSwift.app/BoardGame-RxSwift";
+			};
+			name = Release;
+		};
+		9B5A815C2542DF8B00635646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2D8DDE72FABAAF2EDAE8FD0 /* Pods-BoardGame-RxSwift-BoardGame-RxSwiftUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HL8FSAKWJ2;
+				INFOPLIST_FILE = "BoardGame-RxSwiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.phetsana.BoardGame-RxSwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "BoardGame-RxSwift";
+			};
+			name = Debug;
+		};
+		9B5A815D2542DF8B00635646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 943433FAC7B1FB3C29D27812 /* Pods-BoardGame-RxSwift-BoardGame-RxSwiftUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HL8FSAKWJ2;
+				INFOPLIST_FILE = "BoardGame-RxSwiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.phetsana.BoardGame-RxSwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "BoardGame-RxSwift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B5A81262542DF8900635646 /* Build configuration list for PBXProject "BoardGame-RxSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B5A81532542DF8B00635646 /* Debug */,
+				9B5A81542542DF8B00635646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B5A81552542DF8B00635646 /* Build configuration list for PBXNativeTarget "BoardGame-RxSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B5A81562542DF8B00635646 /* Debug */,
+				9B5A81572542DF8B00635646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B5A81582542DF8B00635646 /* Build configuration list for PBXNativeTarget "BoardGame-RxSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B5A81592542DF8B00635646 /* Debug */,
+				9B5A815A2542DF8B00635646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B5A815B2542DF8B00635646 /* Build configuration list for PBXNativeTarget "BoardGame-RxSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B5A815C2542DF8B00635646 /* Debug */,
+				9B5A815D2542DF8B00635646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B5A81232542DF8900635646 /* Project object */;
+}

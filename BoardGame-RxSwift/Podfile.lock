@@ -1,0 +1,52 @@
+PODS:
+  - R.swift (5.2.2):
+    - R.swift.Library (~> 5.2.0)
+  - R.swift.Library (5.2.0)
+  - RxBlocking (6.0.0-rc.1):
+    - RxSwift (= 6.0.0-rc.1)
+  - RxCocoa (6.0.0-rc.1):
+    - RxRelay (= 6.0.0-rc.1)
+    - RxSwift (= 6.0.0-rc.1)
+  - RxRelay (6.0.0-rc.1):
+    - RxSwift (= 6.0.0-rc.1)
+  - RxSwift (6.0.0-rc.1)
+  - RxTest (6.0.0-rc.1):
+    - RxSwift (= 6.0.0-rc.1)
+  - Sourcery (1.0.0)
+  - SwiftLint (0.40.3)
+
+DEPENDENCIES:
+  - R.swift
+  - RxBlocking (= 6.0.0-rc.1)
+  - RxCocoa (= 6.0.0-rc.1)
+  - RxSwift (= 6.0.0-rc.1)
+  - RxTest (= 6.0.0-rc.1)
+  - Sourcery
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - R.swift
+    - R.swift.Library
+    - RxBlocking
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - RxTest
+    - Sourcery
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  R.swift: 7c52cdc57a66840ffe6cbd8a823d732059d42a32
+  R.swift.Library: 5ba4f1631300caf9a4d890186930da85d540769d
+  RxBlocking: 48b816ec9fe6e6688fae2f536e4bee899afaaa23
+  RxCocoa: a28d75145c07b7547b85faf1e1ad8b25af88a752
+  RxRelay: 56abad6d32f73567858506d08735fdb341935b9a
+  RxSwift: dae1a32c48148897494b9e2a6b00a68b40694236
+  RxTest: 168030c245ae98ebd710692af173aa47eda6f3c2
+  Sourcery: 928a146ea9b777fa64b0c6ce915c4128b4488cff
+  SwiftLint: dfd554ff0dff17288ee574814ccdd5cea85d76f7
+
+PODFILE CHECKSUM: cadcacf806275abad6e93f92f1fdf6a5d3b09a96
+
+COCOAPODS: 1.9.3
