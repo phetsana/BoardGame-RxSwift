@@ -1,0 +1,17 @@
+//
+//  Production.xcconfig
+//  LBC
+//
+//  Created by Phetsana PHOMMARINH on 04/10/2020.
+//  Copyright © 2020 Phetsana PHOMMARINH. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// Config
+CONFIG_FILENAME = environment.prod
+
+// App Settings
+PRODUCT_DISPLAY_NAME = BoardGame
+PRODUCT_BUNDLE_IDENTIFIER = fr.phetsana.boardgame

@@ -62,5 +62,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>CONFIG_FILENAME</key>
+	<string>$(CONFIG_FILENAME)</string>
 </dict>
 </plist>
