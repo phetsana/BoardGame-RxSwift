@@ -48,16 +48,23 @@ struct Environment {
         }
     }()
 
-    var clientId: String {
+    var clientID: String {
         let data = Data(configuration.clientId)
         let bytes = [UInt8](data)
-        let revealString = Environment.obfuscator.reveal(bytes: bytes)
-        precondition(nil != revealString, "Unable to reveal client id")
-        return revealString!
+        guard let revealString = Environment.obfuscator.reveal(bytes: bytes) else {
+            print("Unable to reveal client id")
+            abort()
+        }
+        return revealString
     }
 
-    var hostName: String {
-        return configuration.hostName
+    var baseURL: URL {
+        let hostName = configuration.hostName
+        guard let baseURL = URL(string: hostName) else {
+            print("Unable to get base URL")
+            abort()
+        }
+        return baseURL
     }
 
     /**

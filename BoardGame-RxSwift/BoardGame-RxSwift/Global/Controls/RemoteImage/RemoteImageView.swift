@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 private enum RemoteImageViewState {
     case loading
@@ -29,13 +31,18 @@ class RemoteImageView: UIView {
     private(set) lazy var loaderActivyIndicatorView: UIActivityIndicatorView = {
         let activityIndicatorView = UIActivityIndicatorView()
         activityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
-        activityIndicatorView.style = .gray
+        activityIndicatorView.style = .medium
         return activityIndicatorView
     }()
 
     private(set) var sharedConstraints: [NSLayoutConstraint] = []
     
     private var notFoundImage: UIImage?
+    private var bag: DisposeBag?
+    
+    convenience init() {
+        self.init(notFoundImage: nil)
+    }
     
     convenience init(notFoundImage: UIImage? = nil) {
         self.init(frame: .zero)
