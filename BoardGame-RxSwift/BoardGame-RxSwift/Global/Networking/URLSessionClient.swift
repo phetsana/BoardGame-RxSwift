@@ -10,7 +10,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class URLSessionClient {
+class URLSessionClient: NetworkingService {
     private let baseURL: URL?
     private let session: URLSession
     private let decoder: JSONDecoder
@@ -20,19 +20,17 @@ class URLSessionClient {
         self.session = URLSession.shared
         self.decoder = decoder
     }
-}
-    
-// MARK: - NetworkingService
-extension URLSessionClient: NetworkingService {
 
     func send<T: NetworkingRequest>(_ request: T) -> Observable<T.Response> {
         do {
             let url = try self.endpoint(for: request)
             let urlRequest = URLRequest(url: url)
+ 
             return session.rx
-                    .data(request: urlRequest)
-                    .map { try self.mapping($0, toType: request) }
+                .data(request: urlRequest)
+                .map { try self.mapping($0, toType: request) }
         } catch {
+            debugPrint("error = \(error.localizedDescription)")
             return Observable.create { observer in
                 observer.onError(error)
                 return Disposables.create {
@@ -47,7 +45,7 @@ extension URLSessionClient: NetworkingService {
         return mappingData
     }
     
-    private func endpoint<T: NetworkingRequest>(for request: T) throws -> URL {
+    func endpoint<T: NetworkingRequest>(for request: T) throws -> URL {
         guard let baseURL = baseURL else {
             throw NetworkingError.endpoint
         }
