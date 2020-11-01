@@ -10,6 +10,9 @@ import RxSwift
 
 protocol GamesDataProvider {
     var select: Observable<GameViewModel> { get }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
 }
 
 final class GamesDataProviderImpl: NSObject, GamesDataProvider {

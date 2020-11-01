@@ -34,7 +34,6 @@ final class GameDetailView: UIView {
         view.translatesAutoresizingMaskIntoConstraints = false
         view.contentMode = .scaleAspectFill
         view.clipsToBounds = true
-        view.backgroundColor = .random
         view.layer.cornerRadius = 2
         return view
     }()

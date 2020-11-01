@@ -96,7 +96,8 @@ extension GamesListView {
             .disposed(by: bag)
 
         let dataProvider = viewModel?.output
-            .gameViewModels
+            .games
+            .map { $0.map { GameViewModel(game: $0) } }
             .map({ [weak self] (gameViewModels) -> DataProvider in
                 let dataProvider = GamesDataProviderImpl(gameViewModels: gameViewModels)
                 self?.dataProvider = dataProvider

@@ -19,7 +19,7 @@ final class GamesListViewModel: ViewModel {
     
     struct Output {
         let title: Driver<String?>
-        let gameViewModels: Driver<[GameViewModel]>
+        let games: Driver<[Game]>
         let loading: Driver<Bool>
         let error: Driver<String?>
     }
@@ -43,7 +43,7 @@ final class GamesListViewModel: ViewModel {
                 return Observable.never()
             })
         
-        let gameViewModels = requestDataSubject
+        let games = requestDataSubject
             .throttle(.seconds(1), scheduler: MainScheduler.instance)
             .map { _ -> Observable<[Game]> in
                 loading.on(.next(true))
@@ -54,13 +54,12 @@ final class GamesListViewModel: ViewModel {
                 loading.on(.next(false))
                 return games
             }
-            .map { $0.map { GameViewModel(game: $0) } }
         
         let title = PublishSubject<String?>()
             .startWith("Board games")
             
         self.output = Output(title: title.asDriver(onErrorJustReturn: nil),
-                             gameViewModels: gameViewModels.asDriver(onErrorJustReturn: []),
+                             games: games.asDriver(onErrorJustReturn: []),
                              loading: loading.asDriver(onErrorJustReturn: false),
                              error: error.asDriver(onErrorJustReturn: nil))
         self.input = Input(requestData: requestDataSubject.asObserver())
