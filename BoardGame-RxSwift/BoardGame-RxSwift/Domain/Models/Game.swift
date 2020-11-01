@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct Games: Codable {
+struct Games: Codable, Equatable {
     let games: [Game]
 }
 
-struct Game: Codable, Identifiable {
+struct Game: Codable, Identifiable, Equatable {
     let id: String
     let name: String?
     let imageUrl: URL?

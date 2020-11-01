@@ -23,6 +23,6 @@ final class GamesRepositoryImpl: GamesRepository {
     func getGames() -> Observable<[Game]> {
         let request = GetGamesRequest()
         return networkingService.send(request)
-            .map { $0.games }
+            .map { $0.games }        
     }
 }
